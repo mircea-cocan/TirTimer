@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Shooting phase icon: target with arrow/bullseye -->
+    <path
+        android:fillColor="@color/stage_shooting"
+        android:pathData="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10s10,-4.48 10,-10S17.52,2 12,2zM12,20c-4.41,0 -8,-3.59 -8,-8s3.59,-8 8,-8s8,3.59 8,8S16.41,20 12,20z"/>
+    <!-- Inner circle -->
+    <path
+        android:fillColor="@color/stage_shooting"
+        android:pathData="M12,12m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0"
+        android:fillAlpha="0.3"/>
+    <!-- Bullseye center -->
+    <path
+        android:fillColor="@color/stage_shooting"
+        android:pathData="M12,12m-2.5,0a2.5,2.5 0,1 1,5 0a2.5,2.5 0,1 1,-5 0"/>
+    <!-- Arrow pointing to center -->
+    <path
+        android:strokeColor="@color/stage_shooting"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M16,8L12,12"/>
+    <path
+        android:fillColor="@color/stage_shooting"
+        android:pathData="M15,7L17,7L17,9L15,7z"/>
+</vector>

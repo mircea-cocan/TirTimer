@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardPreset"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="4dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- Preset Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPresetName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Competition"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/on_surface"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tvPresetTiming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prep: 5:00, Shoot: 3:00"
+                android:textSize="14sp"
+                android:textColor="@color/timer_primary" />
+
+            <TextView
+                android:id="@+id/tvPresetType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Default"
+                android:textSize="12sp"
+                android:textColor="@color/stage_shooting"
+                android:layout_marginTop="2dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSelectPreset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select"
+                android:textSize="12sp"
+                android:layout_marginEnd="8dp"
+                app:cornerRadius="16dp"
+                app:backgroundTint="@color/timer_primary"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:minWidth="0dp"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEditPreset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textSize="12sp"
+                android:layout_marginEnd="8dp"
+                app:cornerRadius="16dp"
+                app:strokeColor="@color/timer_primary"
+                app:strokeWidth="1dp"
+                android:textColor="@color/timer_primary"
+                android:textAllCaps="false"
+                android:minWidth="0dp"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"
+                style="@style/Widget.Material3.Button.OutlinedButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDeletePreset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textSize="12sp"
+                app:cornerRadius="16dp"
+                app:strokeColor="@color/error"
+                app:strokeWidth="1dp"
+                android:textColor="@color/error"
+                android:textAllCaps="false"
+                android:minWidth="0dp"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"
+                style="@style/Widget.Material3.Button.OutlinedButton" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

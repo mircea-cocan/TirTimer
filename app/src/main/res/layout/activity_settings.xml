@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timer Settings"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.02"
+            android:shadowColor="#40000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4" />
+
+        <!-- Stage 1 Settings -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/white"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Preparation Duration"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/stage_preparation"
+                    android:layout_marginBottom="16dp"
+                    android:drawableStart="@drawable/ic_preparation"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:fontFamily="sans-serif-medium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:hint="Minutes"
+                        app:hintTextColor="@color/timer_primary"
+                        app:boxStrokeColor="@color/timer_primary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etStageOneMinutes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:text="5"
+                            android:textColor="@color/on_surface"
+                            android:textColorHint="@color/timer_primary" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textSize="24sp"
+                        android:textColor="@color/on_surface"
+                        android:layout_marginHorizontal="8dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:hint="Seconds"
+                        app:hintTextColor="@color/timer_primary"
+                        app:boxStrokeColor="@color/timer_primary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etStageOneSeconds"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:text="0"
+                            android:textColor="@color/on_surface"
+                            android:textColorHint="@color/timer_primary" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Stage 2 Settings -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/white"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shooting Duration"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/stage_shooting"
+                    android:layout_marginBottom="16dp"
+                    android:drawableStart="@drawable/ic_shooting"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:fontFamily="sans-serif-medium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:hint="Minutes"
+                        app:hintTextColor="@color/timer_primary"
+                        app:boxStrokeColor="@color/timer_primary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etStageTwoMinutes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:text="3"
+                            android:textColor="@color/on_surface"
+                            android:textColorHint="@color/timer_primary" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textSize="24sp"
+                        android:textColor="@color/on_surface"
+                        android:layout_marginHorizontal="8dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:hint="Seconds"
+                        app:hintTextColor="@color/timer_primary"
+                        app:boxStrokeColor="@color/timer_primary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etStageTwoSeconds"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:text="0"
+                            android:textColor="@color/on_surface"
+                            android:textColorHint="@color/timer_primary" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="Save Settings"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp"
+                app:cornerRadius="28dp"
+                app:backgroundTint="@color/white"
+                android:textColor="@color/timer_primary"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif-medium" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"
+                app:cornerRadius="28dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="2dp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif-medium"
+                style="@style/Widget.Material3.Button.OutlinedButton" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,35 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Stopwatch body -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,18C36.32,18 22.5,31.82 22.5,49.5s13.82,31.5 31.5,31.5s31.5,-13.82 31.5,-31.5S71.68,18 54,18zM54,74.25c-13.68,0 -24.75,-11.07 -24.75,-24.75S40.32,24.75 54,24.75s24.75,11.07 24.75,24.75S67.68,74.25 54,74.25z" />
+
+    <!-- Crown -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M47.25,9h13.5v9h-13.5z" />
+
+    <!-- Clock hands -->
+    <path
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="6.75"
+        android:strokeLineCap="round"
+        android:pathData="M54,49.5L54,36" />
+
+    <path
+        android:strokeColor="#F44336"
+        android:strokeWidth="4.5"
+        android:strokeLineCap="round"
+        android:pathData="M54,49.5L65.25,49.5" />
+
+    <!-- Center dot -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,49.5m-3.6,0a3.6,3.6 0,1 1,7.2 0a3.6,3.6 0,1 1,-7.2 0" />
+
+</vector>
